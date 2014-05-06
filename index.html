@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="twittler">
   <head>
-    <script src="jquery.js"></script>
-    <script src="data_generator.js"></script>
+    <title>Twittler</title>
+    <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css">
   </head>
   <body>
-    <script>
+    <div ng-controller="mainCtrl">
+      <button type="button" class="btn btn-primary" ng-click="showTweets()">Button</button>
+    </div>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
 
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
 
-      });
 
-    </script>
+<!-- Dependencies -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="bower_components/ng-Fx/dist/ng-Fx.js"></script>
+    <script src="jquery.js"></script>
+
+
+<!-- App files -->
+    <script src="app/app.js"></script>
+    <script src="data_generator.js"></script>
+    <!-- // <script src="app.js"></script> -->
   </body>
 </html>
