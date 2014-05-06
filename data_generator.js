@@ -65,5 +65,6 @@ var writeTweet = function(message){
   var tweet = {};
   tweet.user = visitor;
   tweet.message = message;
+  console.log(tweet);
   addTweet(tweet);
 };
