@@ -1,60 +1,56 @@
+body {
+  background: url("file:images/Paint.jpg");
+}
+
 ul {
   -webkit-padding-start: 0px;
 }
 
 li {
   list-style-type: none;
-  border-bottom-color: #e1e8ed;
-  border-bottom-style: solid;
+  border-bottom: 1px solid #e1e8ed;
+  height: 40px;
 
 }
 
 .main {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  color: rgb(41, 47, 51);
-  display: block;
-
+  margin-top: 7px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
-  height: 6488px;
   line-height: 18px;
   width: 590px;
 }
+
 .mainHeader {
   min-height: 20px;
   padding: 12px;
   background-color: #fff;
   border-bottom: 1px solid #e1e8ed;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 5px 5px;
 }
 
-.awaitingTweets {
-  position: relative;
-  top: -1px;
+.showing {
   font-size: 13px;
-  display: block;
   padding: 10px 1px;
   cursor: pointer;
   text-align: center;
-  font-weight: normal;
   background-color: #f5f8fa;
   border-top: 1px solid #e1e8ed;
   border-bottom: 1px solid #e1e8ed;
-  z-index: 2;
 }
+
+.awaiting {
+  border-bottom: 1px solid #e1e8ed;
+}
+
 .profile {
-  /*float: left;*/
+  float: left;
   width: 290px;
 }
 
 .contentHead {
   border: 1px solid #e1e8ed;
-  border-bottom-width: 0;
   border-radius: 6px 6px 0 0;
-  background-clip: padding-box;
 }
 
 .innerHead {
@@ -73,34 +69,62 @@ h2 {
   line-height: 22px;
 }
 
-.newTweets {
-  position: relative;
-  top: -1px;
-  font-size: 13px;
-  display: block;
-  padding: 10px 1px;
-  cursor: pointer;
-  text-align: center;
-  font-weight: normal;
-  background-color: #f5f8fa;
-  border-top: 1px solid #e1e8ed;
+/* Tweet Cards */
+
+.user {
+  text-align: left;
+}
+
+/* Profile Card */
+
+.profileCard {
+  border: 1px solid #e1e8ed;
+  background: #FFF;
+  border-radius: 6px;
+  margin-top: 7px;
+}
+
+.topPic {
+  background: url("file:images/twitter_header.jpg");
+  background-size: 100%;
   border-bottom: 1px solid #e1e8ed;
-  z-index: 2;
+  height: 95px;
+  border-radius: 4px 4px 0 0;
+  background-position-y: 50%;
+  width: 100%;
+  padding: 0 1px;
+  margin-left: -1px;
+  margin-top: -1px;
 }
 
-.visibleTweets {
-  position: relative;
-  margin-left: 0;
-  list-style: none;
+.selfie {
+  border-radius: 5px;
+  height: 70px;
+  width: 70px;
+  margin: -30px 0 0 8px;
 }
 
-body {
-  /*background-position: left 40px;
-  background-position-x: 0%;
-  background-position-y: 40px;
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-repeat: no-repeat;*/
-  background: url("file:images/Paint.jpg");
-  /*background-color: #1A1B1F;*/
+.info {
+  top: 103px;
+  left: 90px;
+  width: 185px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 85px;
+}
+
+.tweetBox {
+  background-color: #eaf8fd;
+  border: 1px solid;
+  border-color: #cbeffb;
+  padding: 12px;
+  width: 259px;
+}
+
+input {
+  width: 225px;
 }

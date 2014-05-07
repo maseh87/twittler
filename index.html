@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  <div class='profile col-md-4'></div>
+  <div class='profile col-md-4'>
+    <div class='profileCard'>
+      <div class='topPic'></div>
+      <div class='profileInfo'>
+        <div class='name'>Mason Hargrove</div>
+        <img class='selfie' src="file:images/selfie.jpg">
+          <span class='handle'>@maseh87</span>
+          <div class='tweetBox'>
+            <input type='text' placeholder='Compose new tweet...'>
+          </div>
+      </div>
+    </div>
+  </div>
     <div class='main col-md-4'>
       <div class='contentHead'>
         <div class='innerHead'>
@@ -15,7 +27,10 @@
         </div>
       </div>
       <div class='tweetContainer'>
-        <div class='awaitingTweets'>
+        <div class='showing'>
+          <div class='awaiting'>
+            <a class='add'>New Tweets</a>
+          </div>
           <div class='visibleTweets'>
             <ul class='initialTweets'>
             </ul>
