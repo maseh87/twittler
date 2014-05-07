@@ -1,5 +1,7 @@
 body {
   background: url("file:images/paint_brain.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 ul {
@@ -53,6 +55,10 @@ li {
   border-radius: 6px 6px 0 0;
 }
 
+.tweetContainer {
+  background-clip: padding-box;
+}
+
 .innerHead {
   min-height: 20px;
   padding: 12px;
@@ -82,6 +88,7 @@ h2 {
   background: #FFF;
   border-radius: 6px;
   margin-top: 7px;
+
 }
 
 .topPic {
