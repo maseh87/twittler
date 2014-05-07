@@ -16,6 +16,11 @@ li {
 
 }
 
+.tweetButton {
+  width: 15%;
+  margin-top: 7px;
+}
+
 .main {
   margin-top: 7px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
