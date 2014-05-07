@@ -1,0 +1,106 @@
+ul {
+  -webkit-padding-start: 0px;
+}
+
+li {
+  list-style-type: none;
+  border-bottom-color: #e1e8ed;
+  border-bottom-style: solid;
+
+}
+
+.main {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: rgb(41, 47, 51);
+  display: block;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 6488px;
+  line-height: 18px;
+  width: 590px;
+}
+.mainHeader {
+  min-height: 20px;
+  padding: 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e8ed;
+  border-radius: 5px 5px 0 0;
+}
+
+.awaitingTweets {
+  position: relative;
+  top: -1px;
+  font-size: 13px;
+  display: block;
+  padding: 10px 1px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: normal;
+  background-color: #f5f8fa;
+  border-top: 1px solid #e1e8ed;
+  border-bottom: 1px solid #e1e8ed;
+  z-index: 2;
+}
+.profile {
+  /*float: left;*/
+  width: 290px;
+}
+
+.contentHead {
+  border: 1px solid #e1e8ed;
+  border-bottom-width: 0;
+  border-radius: 6px 6px 0 0;
+  background-clip: padding-box;
+}
+
+.innerHead {
+  min-height: 20px;
+  padding: 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e8ed;
+  border-radius: 5px 5px 0 0;
+
+}
+
+h2 {
+  color: #66757f;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.newTweets {
+  position: relative;
+  top: -1px;
+  font-size: 13px;
+  display: block;
+  padding: 10px 1px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: normal;
+  background-color: #f5f8fa;
+  border-top: 1px solid #e1e8ed;
+  border-bottom: 1px solid #e1e8ed;
+  z-index: 2;
+}
+
+.visibleTweets {
+  position: relative;
+  margin-left: 0;
+  list-style: none;
+}
+
+body {
+  /*background-position: left 40px;
+  background-position-x: 0%;
+  background-position-y: 40px;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-repeat: no-repeat;*/
+  background: url("file:images/Paint.jpg");
+  /*background-color: #1A1B1F;*/
+}

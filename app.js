@@ -1,15 +1,20 @@
   var $ul = $('.initialTweets');
-    $ul.html('');
-    var index = streams.home.length;
+  $ul.html('');
+  var index = streams.home.length;
     for(var i = 0; i < index; i++){
       var tweet = streams.home[i];
       var $tweet = $('<li></li>');
-      $tweet.text('@' + tweet.user + ': ' + tweet.message);
+      var time = tweet.created_at.toString();
+      var hours = time.split(' ')[4];
+      $tweet.text('@' + tweet.user + ': ' + tweet.message + ' ' + hours).addClass('animated fadeIn');
       $tweet.appendTo($ul);
     }
+
+
+
+
 $(document).ready(function(){
   $('button').hide();
-    $('li').addClass('animated bounceInLeft');
   setInterval(function() {
     var counter = 0;
     var $ul = $('.incomingTweets');
@@ -21,8 +26,8 @@ $(document).ready(function(){
       var $tweet = $('<li></li>');
       $tweet.text('@' + tweet.user + ': ' + tweet.message);
       $tweet.appendTo($ul);
-      if(counter > 30) {
-    $('button').addClass('animated bounceInLeft').show();
+      if(counter > 15) {
+    $('button').addClass('animated flip').show();
   }
     }
   }, 5000);
