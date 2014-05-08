@@ -1,47 +1,22 @@
-  var $ul = $('.initialTweets');
-  var $user = $('.user');
-  $ul.html('');
-  var index = streams.home.length;
-    for(var i = 0; i < index; i++){
-      var tweet = streams.home[i];
-      var $tweet = $('<li></li>');
-      var time = tweet.created_at.toString();
-      var hours = time.split(' ')[4];
-      // $tweet.text('@' + tweet.user);
-      $tweet.text('@' + tweet.user + ': ' + tweet.message + ' ' + hours).addClass('animated fadeIn');
-      $tweet.appendTo($ul);
-    }
-$('.awaiting').hide();
-
-
 $(document).ready(function(){
-  var count = 11;
+  var $ul = $('.initialTweets');
   var storedMessages = [];
+
   $('.tweetButton').hide();
-  $('.tweetButton').removeClass('aimated tada');
-  setInterval(function() {
-    for(var i = count + 1; i < streams.home.length; i++) {
-      count = i;
-      var tweet = streams.home[i];
+
+  var displayTweets = function(index, tweetArr) {
+    $ul.html('');
+    while(index >= 0) {
+      var tweet = tweetArr[index];
       var $tweet = $('<li></li>');
-      var time = tweet.created_at.toString();
-      var hours = time.split(' ')[4];
-      // $tweet.text('@' + tweet.user);
-      var tweets = $tweet.text('@' + tweet.user + ': ' + tweet.message + ' ' + hours).addClass('animated fadeIn');
-      // $tweet.prependTo($ul);
-      storedMessages.push(tweets);
-      if(storedMessages.length > 15) {
-        $('.tweetButton').addClass('animated tada').show();
-
-      }
-
+      var time = tweet.created_at;
+      $tweet.html('<a> @ '+ tweet.user + ' </a>' + tweet.message + ' ' + '<span data-livestamp=" '+ tweet.created_at +' " ></span>');
+      $tweet.appendTo($ul);
+      index -= 1;
     }
-  }, 10000);
+  }
 
-  $('button').on('click', function() {
-    for(var i = 0; i < storedMessages.length; i++) {
-      storedMessages[i].prependTo($ul);
-    }
-  });
-;});
+  displayTweets(streams.home.length - 1, streams.home);
+
+});
 
