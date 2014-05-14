@@ -16,11 +16,6 @@ li {
 
 }
 
-.tweetButton {
-  width: 15%;
-  margin-top: 7px;
-}
-
 .main {
   margin-top: 7px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -47,14 +42,6 @@ li {
   border-bottom: 1px solid #e1e8ed;
 }
 
-.awaiting {
-  border-bottom: 1px solid #e1e8ed;
-}
-
-.profile {
-  float: left;
-  width: 290px;
-}
 
 .contentHead {
   border: 1px solid #e1e8ed;
@@ -89,6 +76,11 @@ h2 {
 
 /* Profile Card */
 
+.profile {
+  float: left;
+  width: 290px;
+}
+
 .profileCard {
   border: 1px solid #e1e8ed;
   background: #FFF;
@@ -114,11 +106,6 @@ h2 {
   margin: -30px 0 0 8px;
 }
 
-.info {
-  top: 103px;
-  left: 90px;
-  width: 185px;
-}
 
 .name {
   font-weight: 700;
