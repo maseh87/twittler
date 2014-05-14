@@ -138,3 +138,7 @@ h2 {
 input {
   width: 225px;
 }
+
+.submit {
+  margin-top: 10px;
+}
